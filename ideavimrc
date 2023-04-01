@@ -1,0 +1,107 @@
+"" Source your .vimrc
+"source ~/.vimrc
+
+"" -- Suggested options --
+" Show a few lines of context around the cursor. Note that this makes the
+" text scroll if you mouse-click near the start or end of the window.
+:set scrolloff=7
+set scroll=10
+
+" Do incremental searching.
+set incsearch
+:set relativenumber number
+:set clipboard+=unnamed
+:set ignorecase
+
+" Don't use Ex mode, use Q for formatting.
+map Q gq
+" movement
+:nnoremap k j
+:nnoremap j h
+:nnoremap i k
+:nnoremap h ^
+:nnoremap H 0
+:nnoremap m $
+:nnoremap o w
+:nnoremap O W
+:nnoremap u b
+:nnoremap U B
+:nnoremap <C-k> i
+:nnoremap H gg
+:nnoremap M G
+" operations
+:nnoremap p e
+:nnoremap e p
+:nnoremap g ;
+:nnoremap Y ,
+:nnoremap , X
+:nnoremap ; x
+:nnoremap a i
+:nnoremap A I
+:nnoremap q a
+:nnoremap Q A
+:nnoremap * i
+:nnoremap x u
+:nnoremap ù %
+:nnoremap K <C-d>
+:nnoremap I <C-u>
+:nnoremap z y
+:nnoremap <tab> >>
+:nnoremap <S-tab> <<
+:nnoremap <enter> a<enter><esc>
+:nnoremap <S-enter> $a<enter><esc>
+:nnoremap . zz
+
+:inoremap <C-k> <esc>
+
+:vnoremap j h
+:vnoremap i k
+:vnoremap k j
+:vnoremap o w
+:vnoremap u b
+:vnoremap h ^
+:vnoremap H 0
+:vnoremap m $
+:vnoremap p e
+:vnoremap g ;
+:vnoremap Y ,
+:vnoremap , X
+:vnoremap ; x
+:vnoremap q i
+:vnoremap Q I
+:vnoremap a a
+:vnoremap A A
+:vnoremap x u
+:vnoremap e p
+:vnoremap ù %
+:vnoremap K <C-d>zz
+:vnoremap I <C-u>zz
+:vnoremap z y
+:vnoremap <tab> >gv
+:vnoremap <S-tab> <gv
+:vnoremap <C-k> <esc>
+
+:onoremap j h
+:onoremap i k
+:onoremap k j
+:onoremap o e
+:onoremap u b
+:onoremap h 0
+:onoremap m $
+:onoremap z y
+
+:vnoremap e pgvy
+
+
+"" -- Map IDE actions to IdeaVim -- https://jb.gg/abva4t
+"" Map \r to the Reformat Code action
+"map \r <Action>(ReformatCode)
+
+"" Map <leader>d to start debug
+"map <leader>d <Action>(Debug)
+
+"" Map \b to toggle the breakpoint on the current line
+"map \b <Action>(ToggleLineBreakpoint)
+
+
+" Find more examples here: https://jb.gg/share-ideavimrc
